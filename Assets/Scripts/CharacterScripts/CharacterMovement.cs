@@ -8,6 +8,7 @@ public class CharacterMovement : MonoBehaviour {
     private float speed = 10f;
 
     private Rigidbody rb;
+    [SerializeField]
     private Transform cameraT;
     private Animator anim;
     private float turnSmoothVelocity;
@@ -15,7 +16,7 @@ public class CharacterMovement : MonoBehaviour {
 	void Start () {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-        cameraT = Camera.main.transform;
+        //cameraT = Camera.main.transform;
 	}
 	
     void FixedUpdate()
